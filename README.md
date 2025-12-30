@@ -66,3 +66,30 @@ cd GNFM
 
 # Install dependencies
 pip install -r requirements.txt
+
+## ⚙️ Citation
+If you find this implementation or datasets helpful, please consider to cite:
+```
+@misc{xiao2024L-NeRF,
+  title={L=NeRF},
+  author={lifei Xiao},
+  publisher={Github},
+  journal = {GitHub repository},
+  howpublished={\url{https://github.com/lifeixiao/L-NeRF/}},
+  year={2024}
+}
+
+Our code is  based on the following code:
+```
+@misc{lin2020nerfpytorch,
+  title={NeRF-pytorch},
+  author={Yen-Chen, Lin},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished={\url{https://github.com/yenchenlin/nerf-pytorch/}},
+  year={2020}
+}
+```
+
+
+```
