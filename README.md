@@ -82,7 +82,7 @@ If you find this implementation or datasets helpful, please consider to cite:
 }
 ```
 
-Our code is based on the GNT code:
+This repository builds upon the Generalizable NeRF Transformer (GNT) and extends it with new feature modulation modules.
 ```
 @inproceedings{
     t2023is,
