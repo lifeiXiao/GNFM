@@ -3,7 +3,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10-blue)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-green)]()
-[![Paper](https://img.shields.io/badge/Paper-ARXIV%202026-lightgrey)]()
+[![Paper](https://img.shields.io/badge/Paper-%202026-lightgrey)]()
 [![Dataset](https://img.shields.io/badge/Dataset-RSID-orange)]()
 
 ---
