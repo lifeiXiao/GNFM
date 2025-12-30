@@ -33,9 +33,7 @@ By extending the Generalizable NeRF Transformer (GNT), GNFM enables **cross-scen
 
 ## 🧩 Framework
 
-<p align="center">
-  <img src="assets/framework.png" width="800">
-</p>
+![GNFM Framework](assets/framework.png)
 
 **Figure:** GNFM architecture extends the Generalizable NeRF Transformer (GNT) with  
 (1) a *Joint Multiresolution Hash Encoder (JMHE)* and  
