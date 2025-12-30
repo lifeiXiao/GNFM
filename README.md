@@ -37,11 +37,7 @@ By extending the Generalizable NeRF Transformer (GNT), GNFM enables **cross-scen
   <img src="assets/gnfm_framework.png" alt="GNFM Framework" width="80%">
 </p>
 
-**Figure:** GNFM architecture extends the Generalizable NeRF Transformer (GNT) with  
-(1) a *Joint Multiresolution Hash Encoder (JMHE)* and  
-(2) a *View-Conditional Feature-wise Linear Modulation (V-FiLM)*.  
-Together, these modules enable direction-aware feature modulation and fine-structure reconstruction.
-
+**Figure1:** GNFM ARCHITECTURE
 ---
 
 ## 📦 Dataset — Reflective Surgical Instrument Dataset (RSID)
