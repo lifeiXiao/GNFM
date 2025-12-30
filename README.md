@@ -68,17 +68,17 @@ cd GNFM
 pip install -r requirements.txt
 ```
 --- 
-## Citation
+## 🔗 Citation
  
 If you find this implementation or datasets helpful, please consider to cite:
 ```
-@misc{xiao2024L-NeRF,
-  title={L=NeRF},
+@misc{xiao2026gnfm,
+  title={GNFM},
   author={lifei Xiao},
-  publisher={Github},
-  journal = {GitHub repository},
-  howpublished={\url{https://github.com/lifeixiao/L-NeRF/}},
-  year={2024}
+  publisher={Spring},
+  journal = {CVM: International Conference on Computational Visual Media},
+  howpublished={\url{https://github.com/lifeixiao/GNFM/}},
+  year={2026}
 }
 ```
 
