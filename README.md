@@ -66,8 +66,10 @@ cd GNFM
 
 # Install dependencies
 pip install -r requirements.txt
-
-## ⚙️ Citation
+```
+--- 
+## Citation
+ 
 If you find this implementation or datasets helpful, please consider to cite:
 ```
 @misc{xiao2024L-NeRF,
@@ -78,6 +80,7 @@ If you find this implementation or datasets helpful, please consider to cite:
   howpublished={\url{https://github.com/lifeixiao/L-NeRF/}},
   year={2024}
 }
+```
 
 Our code is  based on the following code:
 ```
@@ -91,5 +94,3 @@ Our code is  based on the following code:
 }
 ```
 
-
-```
