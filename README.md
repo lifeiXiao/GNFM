@@ -11,25 +11,10 @@
 ## ✨ Overview
 
 **GNFM** introduces a *generalizable neural rendering framework* for small, highly reflective surgical instruments — a critical component for **robot-assisted surgery**.  
-By extending the Generalizable NeRF Transformer (GNT), GNFM enables **cross-scene generalization**, **fine-structure recovery**, and **view-dependent reflection modeling** without per-scene retraining.
+GNFM enables **cross-scene generalization**, **fine-structure recovery**, and **view-dependent reflection modeling** without per-scene retraining.
 
 ---
 
-## 📄 Abstract
-
-> Accurate 3D reconstruction of small, highly reflective surgical instruments is essential for robust perception and safe robot-assisted surgery.  
-> However, conventional NeRFs require dense per-scene training and fail on specular highlights and fine structures.  
-> We propose **GNFM (Generalizable NeRF with View-Aware Feature Modulation)** — a framework that integrates:  
-> - **Joint Multiresolution Hash Encoder (JMHE)** for joint spatial–directional embedding, and  
-> - **View-Conditional Feature-wise Linear Modulation (V-FiLM)** for adaptive, direction-aware feature modulation.  
->  
-> Together, they enhance generalization, surface detail recovery, and specular rendering.  
-> We also release the **Reflective Surgical Instrument Dataset (RSID)**, containing 8 categories and 2,400 multi-view images.  
->  
-> GNFM achieves ~5% improvement in PSNR/SSIM/LPIPS over baselines while maintaining efficiency —  
-> a practical step toward *intelligent and safe robot-assisted perception*.
-
----
 
 ## 🧩 Framework
 
