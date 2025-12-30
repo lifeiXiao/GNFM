@@ -34,7 +34,7 @@ By extending the Generalizable NeRF Transformer (GNT), GNFM enables **cross-scen
 ## 🧩 Framework
 
 <p align="center">
-  <img src="assets/gnfm_framework.png" alt="GNFM Framework" width="80%">
+  <img src="assets/gnfm_framework.png" alt="GNFM Framework" width="100%">
 </p>
 
 **Figure1:** GNFM ARCHITECTURE
