@@ -1,78 +1,72 @@
-# GNFM
-Release of the official implementation of GNFM and the Reflective Surgical Instrument Dataset (RSID)
-
-# GNFM: Generalizable NeRF with View-Aware Feature Modulation  
+# 🧠 GNFM: Generalizable NeRF with View-Aware Feature Modulation  
 ### Reflective Surgical Instrument Rendering toward Robot-Assisted Surgery
 
-📄 [Paper] | 📊 [Dataset (RSID)] | 💻 Code | 🎥 Video (coming soon)
-
-![teaser](assets/teaser.png)
-
----
-
-## Overview
-
-Accurate 3D reconstruction and novel view synthesis of **small, highly reflective surgical instruments**
-are critical for robust perception in robot-assisted surgery.
-However, most existing generalizable NeRF methods are primarily validated on
-**diffuse objects or large-scale scenes**, and often struggle with
-fine-grained geometry and strong view-dependent reflections.
-
-We propose **GNFM**, a **generalizable Neural Radiance Field (NeRF) framework**
-tailored for **reflective surgical instruments**.
-GNFM enables cross-object generalization **without per-object finetuning**
-while preserving thin structures and view-dependent appearance.
-
-Our main contributions are:
-
-- **JMHE (Joint Multiresolution Hash Encoder)** for unified spatial–directional encoding  
-- **V-FiLM (View-Conditional Feature-wise Linear Modulation)** for view-aware radiance modeling  
-- **RSID Dataset**, a benchmark for reflective surgical instrument rendering
+[![Python](https://img.shields.io/badge/Python-3.10-blue)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-green)]()
+[![Paper](https://img.shields.io/badge/Paper-CVM%202025-lightgrey)]()
+[![Dataset](https://img.shields.io/badge/Dataset-RSID-orange)]()
 
 ---
 
-## Method
+## ✨ Overview
 
-![pipeline](assets/pipeline.png)
-
-GNFM follows a generalizable NeRF paradigm and consists of:
-1. A shared geometry–appearance backbone across multiple objects  
-2. JMHE for joint spatial and directional feature encoding  
-3. V-FiLM for view-conditioned feature modulation before color prediction  
-
-This design allows GNFM to better model **thin edges, fine geometry,
-and strong specular reflections**, which are common in surgical instruments.
+**GNFM** introduces a *generalizable neural rendering framework* for small, highly reflective surgical instruments — a critical component for **robot-assisted surgery**.  
+By extending the Generalizable NeRF Transformer (GNT), GNFM enables **cross-scene generalization**, **fine-structure recovery**, and **view-dependent reflection modeling** without per-scene retraining.
 
 ---
 
-## Reflective Surgical Instrument Dataset (RSID)
+## 📄 Abstract
 
-RSID is a synthetic dataset designed for evaluating generalizable NeRF models
-on **small-scale, highly reflective surgical instruments**.
-
-**Dataset statistics:**
-
-- 8 categories of surgical instruments  
-- 2,400 rendered images  
-- Resolution: 800 × 800  
-- Camera radius: 0.3–0.5 m  
-- Official train / validation / test splits  
-
-| Instrument | Train | Val | Test |
-|-----------|-------|-----|------|
-| Scalpel   | 100   | 100 | 100  |
-| Forceps  | 100   | 100 | 100  |
-| Tweezers | 100   | 100 | 100  |
-| ...       | ...   | ... | ...  |
-
-📊 **Dataset Download:** [RSID Dataset Link]
+> Accurate 3D reconstruction of small, highly reflective surgical instruments is essential for robust perception and safe robot-assisted surgery.  
+> However, conventional NeRFs require dense per-scene training and fail on specular highlights and fine structures.  
+> We propose **GNFM (Generalizable NeRF with View-Aware Feature Modulation)** — a framework that integrates:  
+> - **Joint Multiresolution Hash Encoder (JMHE)** for joint spatial–directional embedding, and  
+> - **View-Conditional Feature-wise Linear Modulation (V-FiLM)** for adaptive, direction-aware feature modulation.  
+>  
+> Together, they enhance generalization, surface detail recovery, and specular rendering.  
+> We also release the **Reflective Surgical Instrument Dataset (RSID)**, containing 8 categories and 2,400 multi-view images.  
+>  
+> GNFM achieves ~5% improvement in PSNR/SSIM/LPIPS over baselines while maintaining efficiency —  
+> a practical step toward *intelligent and safe robot-assisted perception*.
 
 ---
 
-## Installation
+## 🧩 Framework
 
-We recommend using **Conda** to reproduce the experimental environment.
+<p align="center">
+  <img src="assets/framework.png" width="800">
+</p>
+
+**Figure:** GNFM architecture extends the Generalizable NeRF Transformer (GNT) with  
+(1) a *Joint Multiresolution Hash Encoder (JMHE)* and  
+(2) a *View-Conditional Feature-wise Linear Modulation (V-FiLM)*.  
+Together, these modules enable direction-aware feature modulation and fine-structure reconstruction.
+
+---
+
+## 📦 Dataset — Reflective Surgical Instrument Dataset (RSID)
+
+| Category | Views | Resolution | Description |
+|-----------|--------|-------------|--------------|
+| Haemostatic Clamp | 300 | 800×800 | Stainless reflective instrument |
+| Curved Needle Holder | 300 | 800×800 | Fine edges & complex reflection |
+| DeBakey–Cooley Forcep | 300 | 800×800 | Textured surface |
+| Dissecting Forcep | 300 | 800×800 | Thin tip geometry |
+| O-ring Forcep | 300 | 800×800 | Ring reflection challenge |
+| Scalpel | 300 | 800×800 | High specularity |
+| Surgical Blades | 300 | 800×800 | Sharp micro-structures |
+| Umbilical Cord Scissor | 300 | 800×800 | Metallic double surface |
+
+📥 **Download:** [Google Drive](#) | [Hugging Face](#)
+
+---
+
+## ⚙️ Installation
 
 ```bash
-conda env create -f environment.yml
-conda activate gnfm
+# Clone the repository
+git clone https://github.com/yourname/GNFM.git
+cd GNFM
+
+# Install dependencies
+pip install -r requirements.txt
