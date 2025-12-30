@@ -82,15 +82,15 @@ If you find this implementation or datasets helpful, please consider to cite:
 }
 ```
 
-Our code is  based on the following code:
+Our code is based on the GNT code:
 ```
-@misc{lin2020nerfpytorch,
-  title={NeRF-pytorch},
-  author={Yen-Chen, Lin},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished={\url{https://github.com/yenchenlin/nerf-pytorch/}},
-  year={2020}
+@inproceedings{
+    t2023is,
+    title={Is Attention All That Ne{RF} Needs?},
+    author={Mukund Varma T and Peihao Wang and Xuxi Chen and Tianlong Chen and Subhashini Venugopalan and Zhangyang Wang},
+    booktitle={The Eleventh International Conference on Learning Representations },
+    year={2023},
+    url={https://openreview.net/forum?id=xE-LtsE-xx}
 }
 ```
 
