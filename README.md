@@ -3,7 +3,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10-blue)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-green)]()
-[![Paper](https://img.shields.io/badge/Paper-CVM%202026-lightgrey)]()
+[![Paper](https://img.shields.io/badge/Paper-ARXIV%202026-lightgrey)]()
 [![Dataset](https://img.shields.io/badge/Dataset-RSID-orange)]()
 
 ---
@@ -61,7 +61,7 @@ If you find this implementation or datasets helpful, please consider to cite:
   title={GNFM},
   author={lifei Xiao},
   publisher={Spring},
-  journal = {CVM: International Conference on Computational Visual Media},
+  journal = {},
   howpublished={\url{https://github.com/lifeixiao/GNFM/}},
   year={2026}
 }
